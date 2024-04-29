@@ -4,7 +4,7 @@ import { store } from "./redux/store";
 import { StripeProvider } from "@stripe/stripe-react-native";
 
 const stripeKey =
-  "pk_test_51LyelkSAVdOdLf5gfOn61Erm7ZujAA4BsYpEzsaA2HKX8zLdQx32yLxX3ztd5bumqZuMT0WiWwZA7CJIeVtmgAal00yq5buYGi";
+  "-----Need to Add Real Key from Stripe sandbox site ----";
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
         backgroundColor: "#fff",
         timeout: 5,
       }}
-      merchantIdentifier="6-pack-ecom.com"
+      merchantIdentifier="com.ppam.con.ecommerceappByPavan"
       publishableKey={stripeKey}
     >
       <Provider store={store}>
